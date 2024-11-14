@@ -1,0 +1,26 @@
+// Copyright (c) 2024 RFull Development
+// This source code is managed under the MIT license. See LICENSE in the project root.
+{
+  "name": "Dev Container Template",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode-remote.remote-containers",
+        "ms-azuretools.vscode-docker",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "github.vscode-github-actions",
+        "GitHub.codespaces",
+        "GitHub.vscode-pull-request-github",
+        "GitHub.remotehub",
+        "GitHub.github-vscode-theme",
+        "EditorConfig.EditorConfig",
+        "eamodio.gitlens"
+      ]
+    }
+  }
+}

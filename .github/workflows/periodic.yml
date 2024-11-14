@@ -1,0 +1,17 @@
+# Copyright (c) 2024 RFull Development
+# This source code is managed under the MIT license. See LICENSE in the project root.
+name: Docker Hub Periodic Trigger
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 0"
+permissions:
+  contents: read
+jobs:
+  docker-hub:
+    runs-on: ubuntu-latest
+    environment: Docker Hub
+    steps:
+      - name: Trigger builds on Docker Hub
+        run: |
+          curl -X POST ${{ secrets.DOCKER_HUB_TRIGGER_URL }} -o /dev/null
