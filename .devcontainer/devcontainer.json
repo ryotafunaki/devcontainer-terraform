@@ -19,7 +19,10 @@
         "GitHub.remotehub",
         "GitHub.github-vscode-theme",
         "EditorConfig.EditorConfig",
-        "eamodio.gitlens"
+        "eamodio.gitlens",
+        "HashiCorp.terraform",
+        "redhat.vscode-xml",
+        "redhat.vscode-yaml"
       ]
     }
   }

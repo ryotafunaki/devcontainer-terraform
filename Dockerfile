@@ -1,10 +1,10 @@
 # Copyright (c) 2024 RFull Development
 # This source code is managed under the MIT license. See LICENSE in the project root.
-FROM hello-world:latest
+FROM ubuntu:latest
 
 # Install dependencies
 RUN apt update && \
-    apt install -y sudo git gnupg2 vim curl lsb-release
+    apt install -y sudo git gnupg2 vim curl lsb-release wget software-properties-common
 
 # Install development tools for root
 ARG USER_NAME=developer
